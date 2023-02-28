@@ -1,0 +1,512 @@
+/*Se importa tipografía*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&display=swap');
+
+/*Reseteo de márgenes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+/*Estilo de la Barra Navegadora*/
+.navbar{
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+}
+.navbar .navbar-nav .nav-item a{
+    color: #fff;
+    font-weight: lighter;
+}
+.navbar .navbar-nav .nav-item a:hover{
+    color: #cc9d02;
+}
+.navbar img{
+    margin-left: 20%;
+}
+.navbar .collapse {
+    text-align: center;
+}
+
+/*Estilo de las secciones*/
+/*Inicio*/
+.home{
+    display: flex;
+    background: url("./assets/fondo.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color:#fff;
+    min-height: 500px;
+    font-family: 'Fredoka One', cursive;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 400;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: #cc9d02;
+    font-weight: 500;
+}
+/*Acerca de*/
+section{
+    padding: 100px 0;
+}
+.about, .education , .skills, .proyects {
+    font-family: 'Indie Flower', cursive;
+    
+}
+.about .title, .experience .title, .education .title, .skills .title, .proyects .title, .contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: #161616 ;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Mi";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    color: #cc9d02;
+    background: #fff ;
+    transform: translateX(-50%);
+}
+.about .about-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #161616;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #cc9d02;
+    text-align: justify;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    background: #cc9d02;
+    border: 2px solid #161616;
+    color: #fff;
+}
+
+/*Experiencia*/
+.experience .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 225px;
+    height: 3px;
+    background: #fff ;
+    transform: translateX(-50%);
+}
+.experience, .skills, .contact{
+    background: #161616;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;    
+}
+.experience .experience_content{
+    display: flex;
+    position: relative;
+}
+.experience_time, .education_time{
+    padding-right: 1rem;
+    padding-left: 18rem;
+}
+.experience_rounder, .education_rounder{
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #cc9d02;
+    border-radius: 50%;
+    margin-top: .25rem;
+}
+.experience_line, .education_line{
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #cc9d02;
+    transform: translate(7px,0);
+}
+.experience_company, .education_title{
+    color: #cc9d02;
+    font-weight: 600;
+    font-size: 25px;
+}
+.experience_job, .education_studies{
+    font-size: 20px;
+    font-weight: bold;
+}
+.experience_description, .education_year{
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+.experience .experience_content .column, .education .education_content .column{
+    width: calc(30% - 30px);
+}
+
+
+
+/*Educación*/
+.education .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #161616 ;
+    transform: translateX(-50%);
+}
+.education .education_content img{
+    background-color: #161616;
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.education_content{
+    display: flex;
+}
+.education_title{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+
+/*Habilidades*/
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 225px;
+    height: 3px;
+    background: #fff ;
+    transform: translateX(-50%);
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content p{
+    font-size: 20px;
+    text-align: justify;
+    color: #fff;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #cc9d02;
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 80%;
+}
+.skills .skills-content .right .javascript::before{
+    width: 70%;
+}
+.skills .skills-content .right .php::before{
+    width: 50%;
+}
+.skills .skills-content .right .bootstrap::before{
+    width: 60%;
+}
+.skills .skills-content .right .angular::before{
+    width: 50%;
+}
+.skills .skills-content .right .mysql::before{
+    width: 50%;
+}
+.skills .skills-content .right .java::before{
+    width: 80%;
+}
+.skills .skills-content .right .python::before{
+    width: 40%;
+}
+.skills .skills-content .right .c:before{
+    width: 40%;
+}
+.skills .skills-content .right .haskell::before{
+    width: 40%;
+}
+.skills .skills-content .right .ingles::before{
+    width: 80%;
+}
+.skills .skills-content .right .italiano::before{
+    width: 40%;
+}
+
+
+/*Proyectos*/
+.proyects .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #161616 ;
+    transform: translateX(-50%);
+}
+.proyects .carousel-inner h5, p, a{
+    color:#cc9d02;
+    font-weight: 600;
+    font-size: x-large;
+}
+.proyects .carousel-inner a:hover{
+    color: #fff;
+}
+.proyects .carousel-caption{
+    background-color: #161616;
+    opacity: 95%;
+}
+
+
+/*Contacto*/
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 185px;
+    height: 3px;
+    background: #fff ;
+    transform: translateX(-50%);
+}
+.contact{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact .redes span{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.contact .redes a{
+    position:relative ;
+    top: 50%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    color: #fff;
+}
+.contact .redes a:hover{
+    color: #cc9d02;
+
+}
+/*Footer*/
+.footer h5, #mostrarFecha{
+    color: #cc9d02;
+    font-family:  'Indie Flower', cursive;
+    font-weight: 600;
+}
+
+/*Configuración responsive media query*/
+@media (max-width: 576px){ /*Punto de ruptura Pequeño.Valor obtenido de la página de Bootstrap.*/
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .education .education_content img{
+        height: 40px;
+        width: auto;
+    }
+    .experience_time, .education_time{
+        padding-right: 1rem;
+    }
+    .education_content .column.right, .skills-content .column.right{
+        margin-left: 15%;
+    }
+
+
+}
+
+@media (max-width: 768px){ /*Punto de ruptura Medio.Valor obtenido de la página de Bootstrap.*/
+    .max-width{
+        padding: 0 50px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 768px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display:flex ;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .rigth {
+        flex: 100%;
+    }
+    .experience .experience_content .column{
+        width: 100%;
+    }
+    .experience .experience_content .column.left h3{
+        font-size: 15px;
+    }
+    .experience .experience_content .column.right span, .experience .experience_content .column.right p, .education .education_content .column.right h3, .education .education_content .column.right span, .education .education_content .column.right p {
+        font-size: 14px;
+    }
+    .education .education_content img{
+        height: 60px;
+        width: auto;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+    }
+    .proyects .carousel-inner h5, p, a{
+        font-size: small;
+    }
+}
+
+@media (max-width: 992px){ /*Punto de ruptura Grande.Valor obtenido de la página de Bootstrap*/
+    .max-width{
+        padding: 0 50px;
+    }
+    .experience_time, .education_time{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 1200px){ /*Punto de ruptura Extra Grande.Valor obtenido de la página de Bootstrap*/
+    .about .about-content .left img{
+        height: 300px;
+        width: 300px;
+    }
+    .proyects .carousel-inner h5, p, a{
+        font-size: large;
+    }
+    .experience_time, .education_time{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .education .education_content img{
+        background-color: #161616;
+        height: 50px;
+        width: auto;
+        margin-bottom: 20px;
+        margin-right: 200px;
+    }
+}
+
+
+@media (min-width: 1400px){ /*Punto de ruptura Extra Extra Grande.Valor obtenido de la página de Bootstrap*/
+    .navbar{
+        min-width: 2500px ;
+    }
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .about .about-content .right .text, .about .about-content .right p{
+        font-size: 25px;
+    }
+    .education .education_content img{
+        height: 80px;
+        width: auto;
+    }
+    .experience .experience_content .column.right span, .experience .experience_content .column.right p, .education .education_content .column.right h3, .education .education_content .column.right span, .education .education_content .column.right p, .skills .skills-content p {
+        font-size: 25px;
+    }
+    .skills .skills-content .right span{
+        font-size: 20px;
+    }
+    .contact .redes a{
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
